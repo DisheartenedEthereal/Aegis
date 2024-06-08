@@ -3,11 +3,12 @@ cmake_minimum_required(VERSION 3.14)
 # List all files containing tests. (Change as needed)
 set(TESTFILES        # All .cpp files in tests/
     main.cpp
-    dummy.cpp
+    dataframe.cpp
+    fileserializer.cpp
 )
 
 set(TEST_MAIN unit_tests)   # Default name for test executable (change if you wish).
-set(TEST_RUNNER_PARAMS "")  # Any arguemnts to feed the test runner (change as needed).
+set(TEST_RUNNER_PARAMS "-v")  # Any arguemnts to feed the test runner (change as needed).
 
 # --------------------------------------------------------------------------------
 #                         Make Tests (no change needed).

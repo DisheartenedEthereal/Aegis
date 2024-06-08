@@ -11,7 +11,7 @@
 
 #include "exampleConfig.h"
 #include "example.h"
-
+#include "dataframe.h"
 /*
  * Simple main program that demontrates how access
  * CMake definitions (here the version number) from source code.
@@ -31,5 +31,20 @@ int main() {
   // Bring in the dummy class from the example source,
   // just to show that it is accessible from main.cpp.
   Dummy d = Dummy();
+    // Creating company profiles
+    CompanyProfile profile1("Company A", "companyA.com", "192.168.1.1", 8.5, "Leading provider of cybersecurity solutions.");
+    CompanyProfile profile2("Company B", "companyB.net", "192.168.1.2", 7.2, "Innovative tech company focused on cybersecurity.");
+
+    // Creating a dataframe and adding profiles to it
+    DataFrame df;
+    df.addProfile(profile1);
+    df.addProfile(profile2);
+
+    // Printing all profiles
+    df.printAllProfiles();
+
+    return 0;
+
+
   return d.doSomething() ? 0 : -1;
 }

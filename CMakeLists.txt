@@ -42,6 +42,7 @@ set(SOURCES          # All .cpp files in src/
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
+    tests/dataframe.cpp
 )
 set(LIBRARY_NAME engine)  # Default name for the library built from src/*.cpp (change if you wish)
 
